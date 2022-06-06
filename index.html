@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/resume.png" rel="shortcut icon" />
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <title>노영진 이력서</title>
+  </head>
+  <body>
+    <div class="headContainer">
+      <div class="name">노영진</div>
+      <div class="infoContainer">
+        <div>
+          Github :
+          <a href="https://github.com/0jiiino">https://github.com/0jiiino</a>
+        </div>
+        <div>E-mail : tnqkrtnqkr7756@gmail.com</div>
+        <div>Contact : 010-6415-2173</div>
+      </div>
+    </div>
+    <hr />
+    <div>
+      사용자 인터페이스를 개발한다는 프론트엔드의 특성에 따라, 작은 기능 하나를
+      구현하더라도 사용자 경험 측면에서 조금 더 꼼꼼하게 확인하고자
+      노력해왔습니다. <br />‘내가 곧 사용자’라는 생각으로 사용자 경험을 우선으로
+      생각하는 것을 지향합니다.
+    </div>
+    <br />
+    <div class="subTheme">Project</div>
+    <hr />
+    <div class="projectContainer">
+      <div class="area" data-group="true">
+        <button class="title">⭐️ 무지개 편지 (개인 프로젝트)</button>
+        <div class="content">
+          <div class="address">
+            → Github (
+            <a href="https://github.com/0jiiino/RainbowLetter-client">
+              FrontEnd
+            </a>
+            ,
+            <a href="https://github.com/0jiiino/RainbowLetter-server"
+              >BackEnd</a
+            >
+            ) /
+            <a
+              href="https://reliable-pepper-9f9.notion.site/dd3e2495cf4b4bf0ab598ddc13dcd8a4"
+            >
+              Notion
+            </a>
+          </div>
+          <div>
+            누군가를 잃어본 아픔을 가진 사람들끼리 위로하고 위로받기 위한 편지
+            앱
+          </div>
+          <ul>
+            <li>개발 기간 : 2022. 02. 21 - 03. 11 (기획 1주, 개발 2주)</li>
+            <li>주요 기술 스택</li>
+            <ul>
+              <li>
+                프론트엔드 : React Native, Expo, Redux-Thunk, Redux-Toolkit
+              </li>
+              <li class="lastList">
+                백엔드 : Node.js, Express, MongoDB, Jsonwebtoken, Naver SMS API
+              </li>
+            </ul>
+            <li>
+              주요 기능 : Naver SMS API를 활용하여 편지의 답장을 편지 작성자에게
+              문자로 전달.
+            </li>
+            <li>컴포넌트 재사용에 포인트를 두고 구현.</li>
+            <li>
+              Redux-Toolkit을 사용하여 보일러 플레이트를 줄이고, 스크린과
+              비즈니스 로직의 관심사를 분리하고자 함.
+            </li>
+            <li>
+              Redux-Thunk를 사용하여 서버에 데이터를 요청하는 로직의 비동기
+              제어가 가능하도록 구현.
+            </li>
+            <li>
+              access / refresh Token을 사용하여, 서버에 데이터 요청 시, token의
+              유효성 검사 과정을 거쳐 보안성을 높임.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="area" data-group="true">
+        <button class="title">⭐️ Travel-Photo-Log (팀 프로젝트 / 3인)</button>
+        <div class="content">
+          <div class="address">
+            → <a href="https://github.com/travelPhotoLog">Github</a> /
+            <a href="https://travel-photo-log.com/">배포 URL</a>
+          </div>
+          <div>
+            추억을 공유하고 싶은 사람들끼리 지도를 공유하여 원하는 위치에 사진을
+            등록하여 함께한 시간을 기록해 나가는 웹사이트
+          </div>
+          <ul>
+            <li>
+              개발 기간 : 2022. 01. 24 - 02. 18 (설 연휴 제외, 기획 1주, 개발
+              2주)
+            </li>
+            <li>협업 방식</li>
+            <ul>
+              <li>칸반과 데일리 스크럼을 활용하여 팀원 간 작업 현황 공유</li>
+              <li>ESLint, Prettier, Husky를 활용하여 일관성 있는 코드 작성</li>
+              <li class="lastList">
+                Pull Request를 활용한 코드 리뷰 / Git-flow 브랜치 전략 적용
+              </li>
+            </ul>
+            <li>주요 기술 스택</li>
+            <ul>
+              <li>
+                프론트엔드 : React, React-query, Redux-Toolkit,
+                Socket.io-client, Styled-component, Firebase, Netlify
+              </li>
+              <li class="lastList">
+                백엔드 : Node.js, Express, MongoDB, AWS s3, Multer, Socket.io,
+                Jsonwebtoken(이하 JWT), Nodemailer, AWS Elastic Beanstalk
+              </li>
+            </ul>
+            <li>
+              여러 사용자가 하나의 지도를 공유하고 있다는 특수성에 의해,
+              Socket.io를 활용하여 지도 변경사항이 실시간으로 반영되도록 구현.
+            </li>
+            <li>
+              React-query를 사용하여 보일러 플레이트를 줄이고, 상태 관리에 대한
+              작업 난이도를 낮춰 전반적인 개발 속도가 향상되도록 함.
+            </li>
+            <li>
+              JWT를 포함한 초대 링크를 전송함으로써, 데이터 위/변조를 막아
+              안전성을 높임.
+            </li>
+            <li>
+              파일 서버를 분리하여, 이미지 저장 시, 운영 서버 및 데이터베이스의
+              과부하를 줄임. → AWS s3를 사용.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="area" data-group="true">
+        <button class="title">⭐️ 큰사람 길라잡이 (팀 프로젝트 / 2인)</button>
+        <div class="content">
+          <div class="address">
+            →
+            <a href="https://github.com/0jiiino/JBNU_Project">Github</a>
+          </div>
+          <div>
+            전북대학교에 입학한 신입생들을 위한 교내 프로그램 길라잡이 및
+            편의시설 위치 제공, 학교 생활 팁 공유 앱
+          </div>
+          <ul>
+            <li>개발 기간 : 2020. 03 - 2020. 06</li>
+            <li>주요 기술 스택 : Java, Google Map API, Firebase</li>
+            <li>
+              Firebase를 사용해 로그인/회원가입 기능을 구현하여, 인증을 받은
+              사용자만이 게시물 저장소에 접근할 수 있도록 보안성을 높임.
+            </li>
+            <li>
+              체크리스트 기능 구현 시, SharedPreference를 사용하여 서버와 별다른
+              통신 없이 앱이 재부팅되어도 데이터가 유지되도록 함.
+            </li>
+            <li>
+              Main Activity 안에서 위치 권한 설정을 해주어 다른 기능 구현 시
+              위치 정보가 필요할 때 따로 권한 설정을 하지 않도록 함.<br />→
+              현재는 사용자의 현재 위치를 기반으로 가까운 편의시설의 위치를
+              확인할 수 있도록 도와주는 기능에만 위치 정보 사용.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="tailContainer">
+      <div class="subContainer">
+        <div class="subTheme">Education</div>
+        <hr />
+        <ul>
+          <li>
+            2016. 03 - 2021. 02 / 전북대학교 IT정보공학과 졸업<br />(현,
+            IT지능정보공학과)
+          </li>
+          <li>2021. 11 - 2022. 03 / 바닐라코딩 부트캠프 수료</li>
+        </ul>
+      </div>
+      <div class="subContainer">
+        <div class="subTheme">Language / Certification</div>
+        <hr />
+        <ul>
+          <li>토익스피킹 140 / Level 6 (2020. 08. 16 취득)</li>
+          <li>정보처리기사 (2019. 11. 22 취득)</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
